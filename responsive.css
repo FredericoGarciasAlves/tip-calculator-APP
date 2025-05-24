@@ -1,0 +1,129 @@
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 8rem;
+  }
+
+  /* === Container principal === */
+  .container {
+    text-align: center;
+  }
+  .title {
+    color: var(--clr-dark-cyan);
+    letter-spacing: 10px;
+    margin-bottom: 8.8rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  /* === Card === */
+  .card {
+    max-width: 608px;
+    padding: 4.8rem 8rem;
+    column-gap: 0;
+    display: block;
+  }
+
+  .card-left {
+    row-gap: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .card-right {
+    min-width: 457px;
+  }
+
+  /* === Input groups === */
+
+  /* === Botões de porcentagem === */
+  .label {
+    text-align: left;
+    color: var(--clr-dark-cyan);
+    margin-bottom: 0.8rem;
+    font-size: 500;
+    font-size: 1.6rem;
+  }
+  .tip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 14.1rem);
+    gap: 1.6rem;
+  }
+
+  /* === Resultados e Reset === */
+
+  .card-right {
+    padding: 2.4rem 3.2rem;
+    padding-top: 3.8rem;
+    border-radius: 15px;
+    width: 41.3rem;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+  }
+
+  .btn-reset {
+    margin-top: 1.6rem;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-family: "Space Mono", monospace;
+    background: var(--clr-bg);
+    display: block;
+    padding-bottom: 0rem;
+  }
+
+  /* === Container principal === */
+
+  .title {
+    margin-bottom: 4rem;
+  }
+
+  /* === Card === */
+  .card {
+    border-radius: 15px 0px 0px 15px;
+    max-width: 375px;
+    padding: 3.2rem 2.4rem;
+    column-gap: 3.2rem;
+  }
+
+  .card-left {
+    row-gap: 3.2rem;
+    padding: 0 8px;
+  }
+
+  .card-right {
+    min-width: 327px;
+  }
+
+  /* === Botões de porcentagem === */
+  .tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 14.7rem);
+    gap: 1.6rem;
+  }
+
+  /* === Resultados e Reset === */
+
+  .card-right {
+    padding: 2.4rem 2.4rem 2.4rem 2.4rem;
+    width: 32.7rem;
+  }
+
+  .result {
+    row-gap: 2.4rem;
+  }
+
+  .result .box-result .amount {
+    font-size: 3rem;
+    color: var(--clr-strong-cyan);
+  }
+
+  .btn-reset {
+    margin-top: 3.2rem;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Splitter Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="variable.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="import.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">SPLI<br />TTER</h1>
+      <div class="card">
+        <!-- Left side -->
+        <section class="card-left">
+          <div class="input-group">
+            <label for="bill">Bill</label>
+            <div class="input-field">
+              <img
+                src="./assets/images/icon-dollar.svg"
+                alt="Icon dollar"
+                class="icon"
+              />
+              <input type="number" id="bill" placeholder="0" min="0" />
+            </div>
+          </div>
+
+          <div>
+            <p class="label">Select Tip %</p>
+            <div class="tip-grid">
+              <button class="tip-btn" data-tip="5">5%</button>
+              <button class="tip-btn" data-tip="10">10%</button>
+              <button class="tip-btn" data-tip="15">15%</button>
+              <button class="tip-btn" data-tip="25">25%</button>
+              <button class="tip-btn" data-tip="50">50%</button>
+              <input
+                type="number"
+                id="custom-tip"
+                class="tip-btn custom"
+                placeholder="Custom"
+                min="0"
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="people">Number of People</label>
+            <div class="input-field">
+              <img
+                src="./assets/images/icon-person.svg"
+                alt="Icon person"
+                class="icon"
+              />
+              <input type="number" id="people" placeholder="0" min="1" />
+            </div>
+            <p class="error-message" id="people-error">Can't be zero</p>
+          </div>
+        </section>
+
+        <!-- Right side -->
+        <section class="card-right">
+          <div class="result">
+            <div class="box-result">
+              <p class="result-label">Tip Amount <span>/ person</span></p>
+              <p class="amount" id="tip-amount">$0.00</p>
+            </div>
+            <div class="box-result">
+              <p class="result-label">Total <span>/ person</span></p>
+              <p class="amount" id="total-amount">$0.00</p>
+            </div>
+          </div>
+          <button id="reset" class="btn-reset" disabled>RESET</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

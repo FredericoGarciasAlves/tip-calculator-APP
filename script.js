@@ -77,3 +77,4 @@ resetBtn.addEventListener("click", () => {
   peopleError.style.display = "none";
   peopleInput.style.outline = "none";
 });
+  
